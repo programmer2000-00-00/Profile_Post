@@ -1,0 +1,33 @@
+ ### create profile
+
+POST localhost:8080/profile/create1
+Content-Type:application/json
+
+{
+  "name": "Gulom",
+  "surname": "Urolov",
+  "contactId": "4"
+}
+
+### get list
+GET localhost:8080/profile/get
+### update Profile
+PUT localhost:8080/profile/update?id=2
+Content-Type:application/json
+
+{
+  "name": "jora",
+  "surname": "Urolov",
+  "contactId": "2"
+}
+### delete Profile
+DELETE localhost:8080/profile/delete?id=3
+### get list profile by contact
+GET localhost:8080/profile/get/contact/1
+### get list
+GET localhost:8080/profile/get/profileICP/7
+### get list
+GET localhost:8080/profile/get/profileICPC/5
+### get list
+GET localhost:8080/profile/get/profilePostID/3
+

@@ -1,0 +1,23 @@
+ ### create contact
+
+POST localhost:8080/contact/create
+Content-Type:application/json
+
+{
+  "name": "Gulom",
+  "phone": "+998900451545"
+}
+
+### get Contact
+GET localhost:8080/contact/get
+### update Contact
+PUT localhost:8080/contact/update?id=
+Content-Type:application/json
+
+{
+  "name": "Ali"
+}
+### delete Contact
+DELETE localhost:8080/contact/delete?id=1
+### get contact by profile Id
+GET localhost:8080/contact/get/profile/3

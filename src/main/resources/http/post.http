@@ -1,0 +1,49 @@
+ ### create post
+
+POST localhost:8080/post/create
+Content-Type:application/json
+
+{
+  "title": "Social set",
+  "content": "Salom",
+  "profileID": "3"
+}
+### get list
+GET localhost:8080/post/get
+### update Post
+PUT localhost:8080/post/update?id=1
+Content-Type:application/json
+
+{
+  "title": "Mir",
+  "content": "Hello",
+  "profileID": "3"
+}
+### delete Post
+DELETE localhost:8080/post/delete?id=1
+### page
+GET localhost:8080/post/all/page?page=0&size=3&id=3
+### page
+GET localhost:8080/post/all/page/int?page=0&size=3&id=2
+### page
+GET localhost:8080/post/all/page/title?postID=1
+### page
+GET localhost:8080/post/all/title?profileID=2
+### page
+GET localhost:8080/post/all/post?profileID=3
+### page
+GET localhost:8080/post/all/post/count?profileID=3
+### page
+GET localhost:8080/post/all/post/count/today?id=3
+###
+GET localhost:8080/post/all/post/list1?id=3
+###
+GET localhost:8080/post/all/post/list2
+###
+GET localhost:8080/post/all/post/list3
+###
+GET localhost:8080/post/all/post/list5
+###
+GET localhost:8080/post/all/post/list6
+
+

@@ -1,0 +1,40 @@
+ ### create comment
+
+POST localhost:8080/comment/create
+Content-Type:application/json
+
+{
+  "content": "Salom",
+  "postID": "1",
+  "profileID": "2"
+}
+### get list
+GET localhost:8080/comment/get
+
+### update Post
+PUT localhost:8080/comment/update?id=1
+Content-Type:application/json
+
+{
+  "content": "bonju",
+  "postID": "2",
+  "profileID": "4"
+}
+### delete Post
+DELETE localhost:8080/comment/delete?id=1
+### list
+GET localhost:8080/comment/getList?page=0&size=2
+### list
+GET localhost:8080/comment/getList1?id=2
+### list
+GET localhost:8080/comment/getList2?id=2
+### list
+GET localhost:8080/comment/getList3?id=1
+### list
+GET localhost:8080/comment/getList4?id=2
+### list
+GET localhost:8080/comment/getList5?id=1
+### list
+GET localhost:8080/comment/getList6?id=1
+### list
+GET localhost:8080/comment/getList8?date1=2022-11-28&date2=2022-11-30
